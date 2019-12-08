@@ -4,17 +4,19 @@ import copy
 
 NUM_PARTICLES = 100
 UPDATE_VARIANCE = 0.1
+PROB_THRESHOLD = 0.001
 TARGET = <choose a location with both x,y within 0-10>
 
 
 class Particle:
     """
-    Class to hold a particle in your filter. Should store its position (x,y)
-    and its weight. Note that the weight field must
-    be called "weight." Once optimized in problem 6, it should store the set of
-    all weights and poses as numpy arrays. Depending on how you implement the
-    optimization, it may also need fields or methods for retrieving the particle's
-    own weight and pose.
+    Class to hold a particle in your filter. Should store its position [x, y]
+    and its weight. Note that the position field must be called "pose" and the
+    weight field must be called "weight". You may assign to each particle the
+    weight PROB_THRESHOLD. Once optimized in problem 6, ParticleSet will store
+    the set of all weights and poses as numpy arrays. Depending on how you
+    implement the optimization, it may also need fields or methods for
+    retrieving the particle's own weight and pose.
     """
     def __init__(self, x, y):
 
