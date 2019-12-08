@@ -148,8 +148,8 @@ class LocalizationParticleFilter:
         the distance which must pass between camera frames to trigger a measurement 
         update.
 
-        The kp and des of the previous keyframe should be stored in self.kp
-        and self.des. You should use self.compute_transform to find the 
+        The kp and des of the previous keyframe should be stored in self.key_kp
+        and self.key_des. You should use self.compute_transform to find the 
         distance between the previous camera frame and the current one 
         to use as a control input for the motion model. 
 
